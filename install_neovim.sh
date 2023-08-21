@@ -43,4 +43,7 @@ sudo make install
 # Go back to the parent directory
 cd ..
 
+# Remove the neovim source directory
+sudo rm -rf neovim
+
 echo "Neovim installed successfully!"
