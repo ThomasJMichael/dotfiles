@@ -20,7 +20,7 @@ install_deps_centos_rhel_fedora() {
 
 # Install dependencies based on the detected OS/Distribution
 case $OS in
-    "Ubuntu"|"Debian GNU/Linux")
+    "Ubuntu"|"Debian GNU/Linux" | "Raspbian GNU/Linux")
         install_deps_ubuntu_debian
         ;;
     "CentOS Linux"|"Red Hat Enterprise Linux"|"Fedora")
