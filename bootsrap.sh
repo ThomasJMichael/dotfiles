@@ -18,7 +18,7 @@ done
 
 if $INSTALL_NEOVIM; then
     echo "Installing Neovim..."
-    ./install_neovim.sh
+    ./install/install_neovim.sh
 else
     echo "Skipping Neovim installation."
 fi
@@ -27,7 +27,8 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 echo "Linking Dotfiles!"
 # ln -sf "$DIR/.bashrc" ~/
-ln -s ~/dotfiles/nvim ~/.config/nvim
-ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
+ln -sf ~/dotfiles/nvim ~/.config/nvim
+ln -sf ~/dotfiles/config/.tmux.conf ~/.tmux.conf
+ln -sf ~/dotfiles/config/.bashrc ~/.bashrc
 
 echo "Dotfiles linked!"
