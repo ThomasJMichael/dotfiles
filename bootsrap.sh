@@ -28,7 +28,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 echo "Linking Dotfiles!"
 # ln -sf "$DIR/.bashrc" ~/
 ln -sf ~/dotfiles/nvim ~/.config/nvim
-ln -sf ~/dotfiles/config/.tmux.conf ~/.tmux.conf
-ln -sf ~/dotfiles/config/.bashrc ~/.bashrc
+ln -sf ~/dotfiles/configs/.tmux.conf ~/.tmux.conf
+ln -sf ~/dotfiles/configs/.bashrc ~/.bashrc
 
 echo "Dotfiles linked!"
